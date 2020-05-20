@@ -1,0 +1,15 @@
+extends layout
+
+block content 
+    h2.page-header Login
+    p Please login below 
+    form(method='post', action='/users/login',
+     enctype='multipart/form-data')
+       
+        label Username
+        input.form-contol(name='username', type='text', placeholder= 'Enter Username')
+        .form-group
+        label Password
+        input.form-contol(name='password', type='password', placeholder= 'Enter password')     
+        input btn.btn-primary(type='submit', name='submit', value='Login')
+
